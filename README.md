@@ -57,7 +57,7 @@ project/ <br>
 
 3. Verifica que estás en el lugar correcto:
    
-   coloca dir en la terminal
+   coloca en la terminal: dir 
 
 Debe aparecer el archivo docker-compose.yml.
 
@@ -69,7 +69,7 @@ https://alumnosuvcl-my.sharepoint.com/:f:/g/personal/dante_chavez_estudiantes_uv
 
 5. En la terminal:
 
-   docker compose up --build
+   colocar: docker compose up --build
 
 
 
