@@ -14,6 +14,7 @@ Instalarlo y **reiniciar el computador** después de la instalación.
 
 ### ✔️ Git  
 Para descargar el proyecto como ZIP.
+DESCARGAR UN EN LINK QUE SE DEJARA, YA QUE SI SE DESCARGA POR SEPARADO CABE LA POSIBILIDAD DE QUE NO SE DESCARGEN TODO LOS ARCHIVOS NESESARIOS
 
 ---
 
@@ -46,7 +47,9 @@ project/ <br>
 
 ---
 
-## 📁 4. Ubicarse en la carpeta del proyecto
+## 📁 4. Levantar el proyecto
+
+0. Ir a la ubicacion del proyecto 
 
 ### En Windows:
 
@@ -61,23 +64,17 @@ project/ <br>
 
 Debe aparecer el archivo docker-compose.yml.
 
-4. Antes de continuar debes descargar el siguiente archivo, descomprimirlo y pegarlo dentro de la carpeta backend:
-
-Link carpeta secrets *necesaria*:
-
-https://alumnosuvcl-my.sharepoint.com/:f:/g/personal/dante_chavez_estudiantes_uv_cl/IgB8Y_9sA9_JTaXIYF223xTDAa0bT9J9DfaTL62wJ9YW348?e=RuLKgJ
-
-5. En la terminal:
+4. En la terminal:
 
    colocar: docker compose up --build
 
-6. Verificar la BD:
+5. Verificar la BD(opcional):
 
    coloca esto en esa terminal: mysql -h 127.0.0.1 -P 16010 -u root -proot
 
    y para comprobar que este todo bien: SHOW DATABASES;
 
-7. Para ver el resultado, colocar en el navegador: http://localhost:6060/
+6. Para ver el resultado, colocar en el navegador: http://localhost:6060/
 
 
 
