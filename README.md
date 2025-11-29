@@ -61,11 +61,15 @@ dir
 
 Debe aparecer el archivo docker-compose.yml.
 
-4.En la terminal:
-
-   docker compose up --build
+4. Antes de continuar debes descargar el siguiente archivo, descomprimirlo y pegarlo dentro de la carpeta backend:
 
 Link carpeta secrets *necesaria*:
 
 https://alumnosuvcl-my.sharepoint.com/:f:/g/personal/dante_chavez_estudiantes_uv_cl/IgB8Y_9sA9_JTaXIYF223xTDAa0bT9J9DfaTL62wJ9YW348?e=RuLKgJ
+
+5. En la terminal:
+
+   docker compose up --build
+
+
 
