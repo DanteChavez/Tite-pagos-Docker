@@ -66,5 +66,6 @@ Debe aparecer el archivo docker-compose.yml.
    docker compose up --build
 
 Link carpeta secrets *necesaria*:
+
 https://alumnosuvcl-my.sharepoint.com/:f:/g/personal/dante_chavez_estudiantes_uv_cl/IgB8Y_9sA9_JTaXIYF223xTDAa0bT9J9DfaTL62wJ9YW348?e=RuLKgJ
 
