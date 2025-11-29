@@ -53,11 +53,11 @@ project/ <br>
 1. Abrir **PowerShell** o **CMD**.
 2. Navegar a la carpeta donde está el proyecto:
 
-cd C:\ruta\donde\esta\el\proyecto
+   cd C:\ruta\donde\esta\el\proyecto
 
 3. Verifica que estás en el lugar correcto:
    
-dir
+   coloca dir en la terminal
 
 Debe aparecer el archivo docker-compose.yml.
 
