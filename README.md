@@ -1,4 +1,4 @@
-# 📘 Tutorial Paso a Paso: Cómo Levantar el Proyecto (Frontend + Backend + BD + NGINX)
+# 📘 Tutorial Paso a Paso: Cómo Levantar el Proyecto (Frontend + Backend + BD)
 
 Este documento explica **paso a paso** cómo levantar el proyecto utilizando **Docker** y **Docker Compose**, incluso si nunca los has usado antes.
 
@@ -31,4 +31,38 @@ Opcional si descargaste el proyecto como ZIP.
 ## 📂 3. Estructura del Proyecto
 
 El proyecto debe verse así:
+
+project/
+│── back-end/
+│ └── Dockerfile + otros archivos
+│── front-end/
+│ └── Dockerfile + otros archivos
+│── nginx/
+│ └── (configuración)
+│── bd.sql
+│── docker-compose.yml
+│── README.md
+
+
+---
+
+## 📁 4. Ubicarse en la carpeta del proyecto
+
+### En Windows:
+
+1. Abrir **PowerShell** o **CMD**.
+2. Navegar a la carpeta donde está el proyecto:
+
+cd C:\ruta\donde\esta\el\proyecto
+
+3. Verifica que estás en el lugar correcto:
+   
+dir
+
+Debe aparecer el archivo docker-compose.yml.
+
+4.En la terminal:
+
+   docker compose up --build
+
 
