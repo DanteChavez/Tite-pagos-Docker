@@ -61,7 +61,7 @@ project/ <br>
 
 Debe aparecer el archivo docker-compose.yml.
 
-4. Antes de continuar debes descargar el siguiente archivo, descomprimirlo y pegarlo dentro de la carpeta backend y front:
+4. Antes de continuar debes descargar el siguiente archivo, descomprimirlo y pegarlo dentro de la carpeta backend:
 
 Link carpeta secrets *necesaria*:
 
