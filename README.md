@@ -71,5 +71,13 @@ https://alumnosuvcl-my.sharepoint.com/:f:/g/personal/dante_chavez_estudiantes_uv
 
    colocar: docker compose up --build
 
+6. Una ves este todo corriendo, toca levantar la bd asi que abre otro cmd aparte en la misma direccion anterior para no entorpecer el proceso anterior
+
+   coloca esto en esa terminal: mysql -h 127.0.0.1 -P 16010 -u root -proot
+
+   y para comprobar que este todo bien: SHOW DATABASES;
+
+7. Para ver el resultado 
+
 
 
