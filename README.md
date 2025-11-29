@@ -1,1 +1,2 @@
-# Tite-pagos-Docker
+# Para ejecutar
+## docker compose up --build

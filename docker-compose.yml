@@ -1,0 +1,53 @@
+services:
+  db:
+    image: mysql:8
+    container_name: pagos-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: titec
+    volumes:
+      - ./bd.sql:/docker-entrypoint-initdb.d/bd.sql
+    ports:
+      - "16010:3306"
+
+
+
+  frontend:
+    build: ./frontend
+    container_name: pagos-frontend
+    restart: always
+    ports:
+      - "6060:6060"
+    environment:
+      - PORT=6060
+      - HTTPS=true
+      - SSL_CRT_FILE=/app/secrets/pulgashopcert.pem
+      - SSL_KEY_FILE=/app/secrets/pulgashopkey.pem
+      - REACT_APP_BACKEND_URL=https://localhost:6161
+    volumes:
+      - ./frontend:/app
+      - ./backend/secrets:/app/secrets   # <-- mismo mapeo para certificados del frontend
+      - /app/node_modules    # ⬅ evita sobrescribir node_modules
+    depends_on:
+      - backend
+  backend:
+    build: ./backend
+    container_name: pagos-backend
+    restart: always
+    environment:
+      NODE_ENV: development
+      PORT: 6161
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_USERNAME: root
+      DB_PASSWORD: root
+      DB_DATABASE: titec
+      ALLOWED_ORIGINS: https://localhost:6060,http://localhost:6060
+    ports:
+      - "6161:6161"
+    volumes:
+      - ./backend/secrets:/app/secrets   # <-- para tus certificados SSL
+      - /app/node_modules    # ⬅ evita sobrescribir node_modules
+    depends_on:
+      - db

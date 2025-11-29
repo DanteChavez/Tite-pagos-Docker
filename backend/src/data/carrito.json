@@ -1,0 +1,12 @@
+{
+  "id": "cart_02",
+  "userId": "user_123",
+  "items": [
+    {
+      "id": "prod-test",
+      "name": "Producto de prueba para error",
+      "price": 666,
+      "quantity": 1
+    }
+  ]
+}
