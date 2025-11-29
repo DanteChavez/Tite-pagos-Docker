@@ -13,7 +13,7 @@ Descargar: https://www.docker.com/products/docker-desktop/
 Instalarlo y **reiniciar el computador** después de la instalación.
 
 ### ✔️ Git  
-Opcional si descargaste el proyecto como ZIP.
+Para descargar el proyecto como ZIP.
 
 ---
 
@@ -32,16 +32,16 @@ Opcional si descargaste el proyecto como ZIP.
 
 El proyecto debe verse así:
 
-project/
-│── back-end/
-│ └── Dockerfile + otros archivos
-│── front-end/
-│ └── Dockerfile + otros archivos
-│── nginx/
-│ └── (configuración)
-│── bd.sql
-│── docker-compose.yml
-│── README.md
+project/ <br>
+│── back-end/ <br>
+│ └── Dockerfile + otros archivos <br>
+│── front-end/ <br>
+│ └── Dockerfile + otros archivos <br>
+│── nginx/ <br>
+│ └── (configuración) <br>
+│── bd.sql <br>
+│── docker-compose.yml <br>
+│── README.md <br>
 
 
 ---
